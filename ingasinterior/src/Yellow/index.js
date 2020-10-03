@@ -12,7 +12,7 @@ class Yellow extends React.Component {
         
         return(
             <React.Fragment>
-                <p>I'm yellow</p>
+                
                 {/* {yellow} */}
                 {yellow.map(color => (
                     

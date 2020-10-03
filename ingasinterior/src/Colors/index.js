@@ -8,15 +8,24 @@ class Colors extends React.Component {
 
         }
     }
-
+    showColors(event) {
+        event.preventDefault();
+        console.log('love me')
+        let color = event.target.nextElementSibling
+        color.classList.toggle('active')
+        
+    }
+    removeOtherColors() {
+        
+    }
     render() {
         return(
             <React.Fragment>
-                <h4>Yellow</h4>
-                <Yellow />
-                <h4>Gray</h4>
+                <h4 onClick={this.showColors}>Yellow</h4>
+                <section className="hidden"><Yellow /></section>
+                <h4 onClick={this.showColors}>Gray</h4>
                 <section></section>
-                <h4>Black</h4>
+                <h4 onClick={this.showColors}>Black</h4>
                 <section></section>
             </React.Fragment>
         )
