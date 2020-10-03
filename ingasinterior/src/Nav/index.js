@@ -1,9 +1,12 @@
 import React from 'react'
-
+import {List} from 'semantic-ui-react'
 function Nav() {
     return(
         <React.Fragment>
-            <p>I'm a nav</p>
+            <List>
+                <List.Item>About</List.Item>
+                <List.Item>Colors</List.Item>
+            </List>
         </React.Fragment>
     )
 }

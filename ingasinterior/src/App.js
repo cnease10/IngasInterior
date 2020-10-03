@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './Header'
+import HeaderComp from './Header'
+import About from './About'
+import Colors from './Colors'
 function App() {
   return (
     <div className="App">
-     <Header/>
+     <HeaderComp/>
+     <About /> <br/>
+     <Colors />
     </div>
   );
 }
