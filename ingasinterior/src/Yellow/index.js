@@ -6,7 +6,7 @@ class Yellow extends React.Component {
     {
         let yellow = ""
         function getYellow() {
-            yellow = ['#FFFFCC', '#FFFF99', '#FFFF66', '#FFFF33', '#FFFF00'];
+            yellow = ['FFFFCC', 'FFFF99', 'FFFF66', 'FFFF33', 'FFFF00'];
         }
         getYellow()
         
@@ -16,7 +16,7 @@ class Yellow extends React.Component {
                 {/* {yellow} */}
                 {yellow.map(color => (
                     
-                    <section key={color} style={{backgroundColor: 'yellow' }}>{color}</section>
+                    <section key={color} style={{backgroundColor: `#${color}` }}>{color}</section>
                     
                 ))}
                 
