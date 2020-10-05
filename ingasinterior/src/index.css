@@ -17,3 +17,6 @@ code {
 .hidden.active{
   display: block;
 }
+.active{
+  display:block;
+}
